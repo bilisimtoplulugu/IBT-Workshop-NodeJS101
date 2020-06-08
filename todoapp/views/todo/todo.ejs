@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+    <% 
+    if (data.length) { 
+        data.forEach((task, index) => {
+            %>
+    <li><%= task.id %> | <%= task.name %>| <%= task.task %></li>
+    <%
+        });    
+     } 
+     else { %> Nothin to see! <% } %>
+</body>
+
+</html>
